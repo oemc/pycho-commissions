@@ -12,4 +12,4 @@ This web page is only a prototype and does not have any functionality. No inform
 
 # License
 
-[MIT](https://github.com/oemc/pycho-commissions/blob/main/README.md)
+[MIT](https://github.com/oemc/pycho-commissions/blob/master/LICENSE)
