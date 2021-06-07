@@ -8,7 +8,7 @@ HTML, CSS, Javascript webpage made as an assignment for Free Code Camp's Respons
 
 [Github pages demo](https://oemc.github.io/pycho-commissions/)
 
-This web page is only a prototype and does not have any functionality. No information is collected when pressing the submit button.
+The commission staus is "Closed" at the moment this website has been commited to github pages. There is no warranty this staus will change in the future, check my [twitter](https://twitter.com/pychoCentury) for more information on when commission will be open.
 
 # License
 

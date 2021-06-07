@@ -20,10 +20,10 @@
   <div id="sections">
     <div id="home" class="vertical">
       <div class="nav-bar-dummy"></div>
-      <h2>Pycho Century</h2>
-      <h3>Live2D Rigger</h3>
+      <h1>Pycho Century</h1>
+      <h2>Live2D Rigger</h2>
       <p>Hello, and thank you for visiting my site. I'm a hobbyist who sometimes opens commissions to the public and do collabs with artists and game developers to bring cool illustrations to life with Live2D Cubism</p>
-      <p>You can find more in my social medias:</p>
+      <p>You can find more on my social media:</p>
       <ul>
         <li><a class="nav-link" href="https://twitter.com/pychoCentury">Twitter</a></li>
         <li><a class="nav-link" href="https://pycho.itch.io/">Itch.io</a></li>
@@ -37,7 +37,11 @@
         <source id="source" src="./videos/1.mp4" type="video/mp4">
         Your browser does not support video.
       </video>
-      <div id="video-reel" class="horizontal"></div>
+      <div id="video-reel-container">
+        <div id="video-reel-dummy">
+          <div id="video-reel"></div>
+        </div>
+      </div>
     </div>
     <div id="commissions" class="vertical">
       <div class="nav-bar-dummy"></div>
@@ -45,30 +49,30 @@
       <p>Status: Closed</p>
       <p>Please read the following TOS before contacting me:</p>
       <ul>
+        <li>Please credit me as the rig artist by providing a link to this site when you use your model on social media, streaming platforms or commercially</li>
         <li>Payment <b>ONLY</b> through <a href="https://pagalo.co/">pagalo.gt</a>. I do not accept other payment methods such as Paypal.</li>
         <li>You can pay upfront or after receiving the video demo, the final product (gif, mp4, cmo3, or moc3) won't be delivered until I receive the full payment.</li>
-        <li>There are no refunds</li>
-        <li>I only work in one commission at a time, so if your proposal gets accepted it will be scheduled on the waiting list. You'll be notified when I start working on it.</li>
+        <li>There are no refunds.</li>
+        <li>I only work in one commission at a time, so if yours gets accepted it will be scheduled on the waiting list. You'll be notified when I start working on it.</li>
         <li>Once the work is started, the expected waiting time is 2 - 3 weeks.</li>
         <li>Please keep in mind that this service is <b>only rigging</b> your illustration. This means:</li>
         <ul>
           <li>I can´t draw an illustration or model for you. You may commission another artist for this before contacting me.</li>
-          <li>I expect that the illustration/model is prepared for rigging, separated into correct layers, and properly organized. If this is not the case I can do the slicing myself but you should keep in mind: this means an extra fee, waiting time will increase, it won't look as good as if the original artist did the slicing.</li>
-          <li>I won't do works with furry or realistic style.</li>
-          <li>NSFW and gore are ok, but there is an extra fee and longer waiting time.</li>
+          <li>I expect that the illustration/model is prepared for rigging, separated into layers, and properly organized. If this is not the case I can do the slicing myself, but, you should keep in mind this means an extra fee, waiting time will increase and it won't look as good as if the original artist did the slicing.</li>
         </ul>
-        <li>You should have basic knowledge of how to use the final product (moc3 or cmo3 file). I can help you to solve a couple of doubts, but I won't take the time to explain to you everything about the models, expressions, animation, etc.</li>
+        <li>I have experience only with anime and cartoon style, I won't do works with furry or realistic style.</li>
+        <li>NSFW and gore are ok but there is an extra fee and longer waiting time.</li>
+        <li>You should have basic knowledge of how to use the final product (moc3 or cmo3 file). I can help you to solve some doubts, but I'm not able to explain everything about vtubing and stuff.</li>
       </ul>
-      <p>If you are ok with everything above, I'll be happy to see your proposal. Please type your email below and I'll contact you.</p>
-      <form id="form" action="">
-        <input id="email" type="email" name="email" placeholder="Your email here" required/>
-        <input id="submit" type="submit"/>
-      </form>
+      <p>If you are ok with everything above, I'll be happy to discuss your commission details.</p>
+      <div><input id="TOScheckbox" type="checkbox" onchange="TOSMessage()"><label>I have read and accept the terms of service</label></div>
+      <div id="commission-open-message" class="commission-message">Please send an email to <a href="mailto:pychoCentury@gmail.com?Subject=Commission%20Request%20YOUR%20NAME%20HERE"> pychoCentury@gmail.com</a> with your commisison details.</div>
+      <div id="commission-closed-message" class="commission-message">Commissions are currently closed</div>
     </div>
   </div>
   <div id="footer-dummy"></div>
   <div id="footer">
-    Made with HTML and CSS by Oscar Morales - 2021
+    Made with HTML, CSS adn JavaScript by Oscar Morales - 2021
   </div>
 </div>
 <!-- partial -->

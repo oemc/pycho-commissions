@@ -2,6 +2,12 @@
     
 }
 
+body{
+  font-size: 20px;
+  font-family: Helvetica, sans-serif;
+  background-color: #003049;
+}
+
 #main{
   display: flex;
   flex-direction: column;
@@ -18,13 +24,16 @@ a{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  z-index: 1;
   position: fixed;
   top: 0;
   left: 0;
   height: 100px;
   width: 100%;
   color: #fcbf49;
-  background-color: #d62828;
+  background-color: #002031;
+  border-color: #d62828;
+  border-style: solid none;
 }
 
 #header-img{
@@ -44,17 +53,24 @@ a{
   align-items: center; 
 }
 
-.horizontal{
-  display: flex;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  flex-wrap: wrap;
+#video-reel-container{
+  padding: 20px 0px 0px 0px;
+  height: auto;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#video-reel-dummy{
+  display: inline-flex;
 }
 
 #video-reel{
-  height: auto;
-  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: nowrap;
+  animation: reel 15s ease-in-out 0s infinite alternate none;
 }
 
 #video{
@@ -64,12 +80,21 @@ a{
 
 .thumbnail{
   height: 150px;
-  padding: 0px, 10px, 0px, 10px;
+  padding: 10px;
 }
 
 #sections{
   color: #eae2b7;
   background-color: #003049;
+}
+
+#home{
+  min-height: 100vh;
+}
+
+#portfolio{
+  background-color: black;
+  border-radius: 10px;
 }
 
 #footer{
@@ -83,13 +108,24 @@ a{
   height: 25px;
   width: 100%;
   color: #fcbf49;
-  background-color: #d62828;
+  background-color: #002031;
+  border-color: #d62828;
+  border-style: solid none;
 }
 
 #footer-dummy{
   height: 30px;
   width: 100%;
   background-color: #003049;
+}
+
+.commission-message{
+  display: grid;
+  place-items: center;
+  width: 50vw;
+  margin: 20px;
+  padding: 20px;
+  border: solid #d62828;
 }
 
 p{
@@ -106,14 +142,15 @@ li{
   margin: 0px 25px 0px 25px;
 }
 
-#email{
-  color: #fcbf49; 
-  background-color: #d62828;
-  border-style: none;
+h1{
+  font-size: clamp(30px, 10vw, 86px);
 }
 
-#submit{
-  color: #fcbf49; 
-  background-color: #d62828;
-  border-style: none;
+h2{
+  font-size: clamp(24px, 6vw, 40px);
+}
+
+@keyframes reel {
+  0% { transform: translateX(0px);}
+  100% { transform: translateX(calc(100vw - 101%));}
 }
